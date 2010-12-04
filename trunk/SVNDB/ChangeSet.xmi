@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:fc83544d-4200-4a72-9455-93ee639bb9f6" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="PHYSICAL" ProducerName="Teiid Designer" ProducerVersion="7.1.0.v20100829-1858-H223-M2">
+    <modelImports xmi:uuid="mmuuid:f69be11a-ea00-4c87-bf87-79e699734c70" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:e7ceafa0-a1fa-4970-a9fd-d62ef3bf72f2">
+    <diagram xmi:uuid="mmuuid:139fb1d7-6c44-435c-8ee7-f66982e7d7a1" type="packageDiagramType" target="mmuuid/fc83544d-4200-4a72-9455-93ee639bb9f6">
+      <diagramEntity xmi:uuid="mmuuid:68a3b946-9ddc-4f53-aa52-3f3cc0a83b73" modelObject="mmuuid/27c63694-d159-4f2c-8d1d-cc06ebdfa30c" xPosition="60" yPosition="40"/>
+    </diagram>
+  </diagram:DiagramContainer>
+  <relational:BaseTable xmi:uuid="mmuuid:27c63694-d159-4f2c-8d1d-cc06ebdfa30c" name="ChangeSet">
+    <columns xmi:uuid="mmuuid:9252e810-c40b-448f-9663-9fd7ac8e20c6" name="revision" precision="10">
+      <type href="http://www.w3.org/2001/XMLSchema#int"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:65932a31-80f8-4194-9cbe-8b45bd1265c4" name="path" length="256">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:15a33913-b999-40e4-bb53-61bb8fec2704" name="change_type" length="10">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:64a6d3a3-a8ec-4c9d-9fd3-1da1dac0f562" name="content" length="1000000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+  </relational:BaseTable>
+</xmi:XMI>

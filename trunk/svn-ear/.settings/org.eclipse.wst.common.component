@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="svn-ear">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="connector-svn.rar" deploy-path="/" handle="module:/resource/connector-svn/connector-svn">
+            <dependent-object>ConnectorModule_1291398206297</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="translator-core.jar" deploy-path="/" handle="module:/resource/translator-core/translator-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="translator-svn.jar" deploy-path="/" handle="module:/resource/translator-svn/translator-svn">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="urn:jboss:bean-deployer:2.0">
+   
+   <bean name="translator-svn-template" class="org.teiid.templates.TranslatorDeploymentTemplate">
+      <property name="info"><inject bean="translator-svn"/></property>
+      <property name="managedObjectFactory"><inject bean="ManagedObjectFactory"/></property>
+   </bean>
+   
+   <bean name="translator-svn" class="org.teiid.templates.TranslatorTemplateInfo">
+      <constructor factoryMethod="createTemplateInfo">
+         <factory bean="TranslatorDeploymentTemplateInfoFactory"/>
+         <parameter class="java.lang.Class">org.teiid.templates.TranslatorTemplateInfo</parameter>
+         <parameter class="java.lang.Class">com.tamal.translator.svn.SVNExecutionFactory</parameter>
+         <parameter class="java.lang.String">translator-svn</parameter>
+         <parameter class="java.lang.String">svn</parameter>         
+      </constructor>
+   </bean>
+</deployment>
