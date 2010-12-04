@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connection-factories>
+
+   <no-tx-connection-factory>
+      <jndi-name>svndb</jndi-name>
+      <rar-name>connector-svn.rar</rar-name>
+      <connection-definition>javax.resource.cci.ConnectionFactory</connection-definition>      
+      <!--
+        All the available properties for this connector are defined inside the "ra.xml" defined inside the rar
+        file mentioned above. 
+       -->
+             
+      <config-property name="URL" type="java.lang.String">file:///home/tamal/workspace/derby/svn-repo/repo</config-property>
+      <config-property name="AuthUserName" type="java.lang.String">anonymous</config-property>
+      <config-property name="AuthPassword" type="java.lang.String">anonymous</config-property>
+
+      <max-pool-size>20</max-pool-size>
+
+    </no-tx-connection-factory>
+
+</connection-factories>
