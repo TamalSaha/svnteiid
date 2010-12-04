@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:fae93b5b-89d8-406b-839f-cf57f817648f" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="PHYSICAL" ProducerName="Teiid Designer" ProducerVersion="7.1.0.v20100829-1858-H223-M2">
+    <modelImports xmi:uuid="mmuuid:7f537a47-502b-442c-b6c7-7d2a51315fee" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:96fd6e5a-bfb6-42b7-bd05-7ea1efb283b4" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:ef146315-ef46-4e8d-a16d-4775ca4168f0">
+    <diagram xmi:uuid="mmuuid:8f1a6a52-7d16-43a4-a875-3cee45b4bee5" type="packageDiagramType" target="mmuuid/fae93b5b-89d8-406b-839f-cf57f817648f">
+      <diagramEntity xmi:uuid="mmuuid:19067d94-2b04-45d4-b11a-be4112231bcd" name="History" modelObject="mmuuid/76437fb6-a0ee-4de6-83f0-352b3cc292f9" xPosition="60" yPosition="40"/>
+    </diagram>
+  </diagram:DiagramContainer>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:0ddfe0c5-b68c-45db-a41a-59840ac74131"/>
+  <relational:BaseTable xmi:uuid="mmuuid:76437fb6-a0ee-4de6-83f0-352b3cc292f9" name="History">
+    <columns xmi:uuid="mmuuid:040f1610-6c98-494c-b069-d884f7f34c28" name="revision" nativeType="int" precision="10">
+      <type href="http://www.w3.org/2001/XMLSchema#int"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:a476dfeb-ce05-4b99-ade0-a44f667fb0a6" name="author" nativeType="string" length="50">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:db4bc867-c23f-4dfe-b5ce-dd8ace6a5e90" name="date" nativeType="timestamp">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#timestamp"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:223f75a8-e2ef-4c5a-9f6c-8bf31ac3c7c5" name="log" nativeType="string" length="1000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+  </relational:BaseTable>
+</xmi:XMI>
